@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Array</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">Pepcoding</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html"
+                >Sample Post</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-color: red">
+      <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="post-heading">
+              <h1>Find element in an Array</h1>
+              <h2 class="subheading">5 minutes read</h2>
+              <span class="meta">
+                Posted by
+                <a href="#!">Nikita Aggarwal</a>
+                on August 4, 2021
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Post Content-->
+    <article class="mb-4">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <p>
+              Dear readers, Let's now move to the next problem, that is ‘Find
+              Element in an array’ of chapter ‘array and functions’. So, reader,
+              if you have already done or at least tried the previous question
+              which was about the span of an array, then this one is going to be
+              as easy as pie for you. Just continue reading.
+            </p>
+            <h2 class="section-heading">Understanding the Problem</h2>
+            <p>
+              Just like in the previous question, first of all you will get a
+              number n, which indicates the length of an array. Then you will
+              get n more inputs corresponding to each index of the array. After
+              that you will be given one more input, d as data, for which you
+              have to find, at which index of array d is present. And in case d
+              is not present in the array then you need to print -1. You may
+              also watch the video for better understanding of the question.
+              Before you move further, it is advised that you spend enough time
+              to understand the question and give it a fair try .
+            </p>
+
+            <h2 class="section-heading">Moving on</h2>
+            <p>
+              So first of all you will be writing an input statement for an
+              integer n. This n, which represents length of the array will be
+              helpful in defining an array say ‘arr’. Now, you need to run a for
+              loop on the array with integer i, initialized to 0. Also
+              satisfying the condition i < n and with an increment of one to i,
+              in each iteration and inside this for loop you will be taking
+              input for ith element of array arr.
+            </p>
+            <img src="./assets/img/code1.png" alt="code1" />
+            <p>
+              Let's assume, the user enters n as 5 in input and an array arr is
+              initialized of length 5. So with the help of a for loop, values to
+              each index of the array will be allocated. Let’s say you assigned
+              1, 2, 8, 5 and 3 as values to corresponding indices of arr. Moving
+              further, now your aim is to find the index of data in array arr,
+              you need to find min and max values of the array. So give it a
+              thought and try to figure out how you can find it. Okay, if you
+              couldn’t find it, don’t feel bad. Let’s look at it together. So
+              for finding the index of data, it is required that data is present
+              in the array. To check this, you need to apply a loop on the
+              array, and using conditional ( if(d == arr[i] ) ), you can make
+              sure that whether data is present in the array or not. Whenever, (
+              if(d == arr[i] ) ) this condition is satisfied, index i will be
+              printed and the return statement will restrict the further
+              iterations of the loop and stop the execution.
+            </p>
+            <img src="./assets/img/code2.png" alt="code2" />
+            <img src="./assets/img/code3.png" alt="code3" />
+            <img src="./assets/img/code4.png" alt="code4" />
+
+            <p>
+              And in case, a value equivalent to data is present more than once
+              in a given array, then the first index with value equal to data
+              will be printed. Also in case, where value equivalent to data is
+              not present in the array then, after control comes out of the for
+              loop, -1 gets printed. So reader, if you still face any problem in
+              understanding this part, we advise you to watch [1:47-3:40]
+              portion of the video.
+            </p>
+
+            <h2 class="section-heading">Complete code</h2>
+            <img src="./assets/img/code5.png" alt="code5" />
+            <img src="./assets/img/code6.png" alt="code6" />
+
+            <p>
+              So reader, we hope you understood the solution. Don’t worry if you
+              are not able to solve this problem by yourself. However, if you
+              still face any difficulties in the solution for the problem, you
+              may check out the complete solution video. Stay motivated and
+              don’t burden yourself with stress. Forgive yourself and be kind to
+              yourself. Happy coding!
+            </p>
+
+            <span class="caption text-muted"
+              >Pepcoding: Perfect platform for your coding career.</span
+            >
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Footer-->
+    <footer class="border-top">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#!">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#!">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#!">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div class="small text-center text-muted fst-italic">
+              Pepcoding Copyright &copy; Website 2021
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
